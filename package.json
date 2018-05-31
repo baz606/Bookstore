@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5",
+    "reload": "^2.2.2",
     "webpack-cli": "^2.1.4"
   }
 }

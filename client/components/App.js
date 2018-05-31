@@ -1,17 +1,13 @@
-// const App = () => {
-//     return (
-//         <h2>Hello Components</h2>
-//     );
-// }
+import BookList from './BookList'
 
 class App extends React.Component {
     constructor() {
         super();
     }
-    
+
     render() {
         return (
-            <h2>Hello Components</h2>
+            <BookList/>
         );
     }
 }
