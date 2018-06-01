@@ -1,6 +1,4 @@
-const http = require('http');
 const express = require('express');
-const reload = require('reload');
 
 const app = express();
 
