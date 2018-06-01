@@ -1,3 +1,4 @@
+const React = require('react');
 import BookList from './BookList'
 
 class App extends React.Component {
