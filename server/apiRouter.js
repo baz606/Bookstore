@@ -19,4 +19,12 @@ router.get('/books', (req, res) => {
     });
 });
 
+router.get('/books/:bookId/ratings', (req, res) => {
+    pool.query('SELECT * FROM reviews WHERE book_id = $1', [req.params.bookId], function (err, result) {
+        if(err) throw err;
+
+        res.send(result.rows);
+    });
+});
+
 export default router;
