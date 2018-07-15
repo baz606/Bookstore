@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../client/components/App';
+import App from '../src/components/App';
 
 const ReactDOMServer = require('react-dom/server');
 
