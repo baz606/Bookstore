@@ -6,7 +6,7 @@ const port = 8080;
 
 app.use(cors());
 
-app.use(express.static('client'));
+app.use(express.static('src'));
 app.set('view engine', 'ejs');
 
 //import serverRender from './render';
