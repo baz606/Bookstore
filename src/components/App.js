@@ -1,6 +1,5 @@
 import React from 'react';
 import BookList from './BookList';
-import axios from 'axios';
 
 class App extends React.Component {
     constructor(props) {
