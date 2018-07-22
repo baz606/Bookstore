@@ -9,14 +9,17 @@ app.use(cors());
 app.use(express.static('src'));
 app.set('view engine', 'ejs');
 
-//import serverRender from './render';
+import serverRender from './render';
 import apiRouter from './apiRouter';
 
 app.use('/api', apiRouter);
 
 app.get('/', (req, res) => {
-    res.render('index.ejs', {
-        content: '' //serverRender()
+    serverRender().then(content => {
+        res.render('index', {
+            markup: content.markup,
+            initialData: content.data
+        });
     });
 });
 

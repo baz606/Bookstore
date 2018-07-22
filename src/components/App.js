@@ -7,15 +7,15 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            books: []
+            books: this.props.initialData
         };
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8080/api/books')
-             .then(res => {
-                 this.setState({books: res.data});
-             });
+        // axios.get('http://localhost:8080/api/books')
+        //      .then(res => {
+        //          this.setState({books: res.data});
+        //      });
     }
 
     render() {
