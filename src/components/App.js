@@ -10,9 +10,13 @@ class App extends React.Component {
         };
     }
 
+    fetchRatingForBook(bookId) {
+        console.log(`Book ${bookId} clicked!`);
+    }
+
     render() {
         return (
-            <BookList books={this.state.books}/>
+            <BookList books={this.state.books} onBookClick={this.fetchRatingForBook}/>
         );
     }
 }
